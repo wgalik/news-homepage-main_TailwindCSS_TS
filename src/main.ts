@@ -1,7 +1,7 @@
 import "./style.css";
 
 const hamburgerBtn = document.getElementById(
-  "hamburger-btn"
+  "hamburger-btn",
 ) as HTMLButtonElement;
 const header = document.querySelector("header") as HTMLElement;
 const mainMenu = document.querySelector("#main-menu") as HTMLElement;
