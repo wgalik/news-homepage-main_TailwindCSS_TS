@@ -90,7 +90,6 @@
 
   #popular article {
     @apply grid  grid-cols-[100px_auto]  grid-rows-[repeat(3,auto)] gap-x-4 w-full;
-    /* grid-template-columns: 100px auto; */
   }
   .popular-images {
     @apply col-[1/2] row-[1/4]  bg-center bg-no-repeat bg-cover;
