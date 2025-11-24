@@ -21,21 +21,20 @@
   /* header */
   header {
     @apply fixed top-0 left-1/2 flex w-full -translate-x-1/2 items-center justify-center bg-(--off-white) py-8;
-  }
-  #logo {
-    @apply h-[clamp(1.75rem,5vw,2.5rem)] w-16 cursor-pointer bg-[url("../assets/images/logo.svg")] bg-contain bg-left bg-no-repeat;
-  }
+    #logo {
+      @apply h-[clamp(1.75rem,5vw,2.5rem)] w-16 cursor-pointer bg-[url("../assets/images/logo.svg")] bg-contain bg-left bg-no-repeat;
+    }
 
-  #hamburger-btn {
-    @apply z-99 h-4.5 w-10 cursor-pointer bg-[url("../assets/images/icon-menu.svg")] bg-cover bg-center bg-no-repeat transition-all duration-500 ease-linear sm:hidden;
-  }
+    #hamburger-btn {
+      @apply z-99 h-4.5 w-10 cursor-pointer bg-[url("../assets/images/icon-menu.svg")] bg-cover bg-center bg-no-repeat transition-all duration-500 ease-linear sm:hidden;
+    }
 
-  #main-menu {
-    @apply absolute top-0 -right-full z-1 flex h-svh w-65 flex-col items-start justify-start gap-6 bg-(--off-white) p-8 pt-38 text-xl sm:static sm:h-auto sm:w-auto sm:flex-row sm:p-0 sm:text-base;
-  }
-
-  .menu-link {
-    @apply text-(--veryDarkBlue) hover:text-(--softRed);
+    #main-menu {
+      @apply absolute top-0 -right-full z-1 flex h-svh w-65 flex-col items-start justify-start gap-6 bg-(--off-white) p-8 pt-38 text-xl sm:static sm:h-auto sm:w-auto sm:flex-row sm:p-0 sm:text-base;
+      .menu-link {
+        @apply text-(--veryDarkBlue) hover:text-(--softRed);
+      }
+    }
   }
 
   section,
@@ -47,67 +46,65 @@
 
   #hero {
     @apply grid gap-8 sm:grid-cols-2 sm:grid-rows-[300px_auto_auto] md:col-[1/3];
+    .image {
+      @apply aspect-square h-75 w-full bg-[url("../assets/images/image-web-3-mobile.jpg")] bg-cover bg-center bg-no-repeat sm:col-[1/3] sm:row-[1/2] sm:bg-[url("../assets/images/image-web-3-desktop.jpg")];
+    }
+    h1 {
+      @apply text-5xl font-extrabold text-(--veryDarkBlue) sm:col-[1/2] sm:row-[2/4] lg:text-6xl;
+    }
+    p {
+      @apply text-(--veryDarkBlue);
+    }
+
+    #hero-btn {
+      @apply h-12 w-50 cursor-pointer bg-(--softRed) px-6 py-2 font-extrabold tracking-widest uppercase hover:bg-(--veryDarkBlue) hover:text-(--off-white);
+    }
   }
 
-  #hero .image {
-    @apply aspect-square h-75 w-full bg-[url("../assets/images/image-web-3-mobile.jpg")] bg-cover bg-center bg-no-repeat sm:col-[1/3] sm:row-[1/2] sm:bg-[url("../assets/images/image-web-3-desktop.jpg")];
-  }
-  h1 {
-    @apply text-5xl font-extrabold text-(--veryDarkBlue) sm:col-[1/2] sm:row-[2/4] lg:text-6xl;
-  }
-  #hero p {
-    @apply text-(--veryDarkBlue);
-  }
-
-  #hero-btn {
-    @apply h-12 w-50 cursor-pointer bg-(--softRed) px-6 py-2 font-extrabold tracking-widest uppercase hover:bg-(--veryDarkBlue) hover:text-(--off-white);
-  }
   /* aside */
 
   aside {
     @apply grid w-full bg-(--veryDarkBlue) p-4 text-(--off-white);
-  }
+    article {
+      @apply border-b py-8 last:border-b-0 last:pb-4;
+    }
 
-  aside article {
-    @apply border-b py-8 last:border-b-0 last:pb-4;
-  }
-
-  h2 {
-    @apply text-3xl font-bold text-(--softOrange) md:text-5xl;
-  }
-  h3 {
-    @apply pb-2 text-xl font-bold ease-in-out hover:text-(--softOrange);
-  }
-  aside p {
-    @apply text-sm font-normal;
+    h2 {
+      @apply text-3xl font-bold text-(--softOrange) md:text-5xl;
+    }
+    h3 {
+      @apply pb-2 text-xl font-bold ease-in-out hover:text-(--softOrange);
+    }
+    p {
+      @apply text-sm font-normal;
+    }
   }
 
   /* 'Popular' section */
 
   #popular {
     @apply mb-64 flex flex-col items-start justify-start gap-8 text-(--veryDarkBlue) md:col-[1/4] md:flex-row;
-  }
-
-  #popular article {
-    @apply grid w-full grid-cols-[100px_auto] grid-rows-[repeat(3,auto)] gap-x-4;
-  }
-  .popular-images {
-    @apply col-[1/2] row-[1/4] bg-cover bg-center bg-no-repeat;
-  }
-  .image_1 {
-    @apply bg-[url("../assets/images/image-retro-pcs.jpg")];
-  }
-  .image_2 {
-    @apply bg-[url("../assets/images/image-top-laptops.jpg")];
-  }
-  .image_3 {
-    @apply bg-[url("../assets/images/image-gaming-growth.jpg")];
-  }
-  span {
-    @apply text-4xl font-bold text-(--softRed);
-  }
-  h4 {
-    @apply self-center text-lg font-bold hover:text-(--softRed);
+    article {
+      @apply grid w-full grid-cols-[100px_auto] grid-rows-[repeat(3,auto)] gap-x-4;
+    }
+    .popular-images {
+      @apply col-[1/2] row-[1/4] bg-cover bg-center bg-no-repeat;
+    }
+    .image_1 {
+      @apply bg-[url("../assets/images/image-retro-pcs.jpg")];
+    }
+    .image_2 {
+      @apply bg-[url("../assets/images/image-top-laptops.jpg")];
+    }
+    .image_3 {
+      @apply bg-[url("../assets/images/image-gaming-growth.jpg")];
+    }
+    span {
+      @apply text-4xl font-bold text-(--softRed);
+    }
+    h4 {
+      @apply self-center text-lg font-bold hover:text-(--softRed);
+    }
   }
 }
 
