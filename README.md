@@ -4,7 +4,7 @@ This is my solution to the News Homepage challenge from Frontend Mentor. The pro
 
 ## 🔗 Link
 
-[Live Site URL:]()
+[Live Site URL:](https://wgalik.github.io/news-homepage-main_TailwindCSS_TS/)
 
 ## 📸 Overview
 
